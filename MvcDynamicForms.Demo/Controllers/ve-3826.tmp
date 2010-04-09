@@ -1,0 +1,78 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using System.Web.Mvc.Ajax;
+using MvcDynamicForms.Fields;
+
+namespace MvcDynamicForms.Demo.Controllers
+{
+    public class TestController : Controller
+    {
+
+        public ActionResult Index()
+        {
+            var form = new Form { Serialize = true };
+            form.Template = string.Format("<div><table>{0}</table>{1}</div>", PlaceHolders.Fields, PlaceHolders.SerializedForm);
+
+            var name = new TextBox
+            {
+                Prompt = "Name",
+                Required = true
+            };
+
+            var age = new TextBox
+            {
+                Prompt = "Age",
+                Required = true
+            };
+
+            var weight = new TextBox
+            {
+                Prompt = "Weight",
+                Required = true
+            };
+
+            var strong = new CheckBox
+            {
+                Prompt = "I am strong!.",
+                Required = true,
+                Template = string.Format("<tr><th/><td>{0}{1}{2}</td></tr>",
+                    PlaceHolders.Error, PlaceHolders.Input, PlaceHolders.Prompt)
+            };
+
+            var foods = new CheckBoxList
+            {
+                Prompt = "Favorite Foods",
+                Required = true
+            };
+            foods.AddChoices("Beef,Pork,Poultry,Seafood,Fruits,Vegetables");
+
+            form.AddFields(name, age, weight, strong, foods);
+            form.SetFieldTemplates(
+                    string.Format(@"<tr><th valign=""top"">{0}</th><td>{1}{2}</td></tr>",
+                    PlaceHolders.Prompt,
+                    PlaceHolders.Error,
+                    PlaceHolders.Input),
+                name,
+                age,
+                weight,
+                foods);
+
+
+            return View(form);
+        }
+
+        [AcceptVerbs(HttpVerbs.Post)]
+        public ActionResult Index(Form form)
+        {
+            if (form.Validate())
+            {
+                return View("Responses", form);
+            }
+
+            return View(form);
+        }
+    }
+}

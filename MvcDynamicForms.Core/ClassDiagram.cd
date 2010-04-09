@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MvcDynamicForms.Fields.Field" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAAEABAA=</HashCode>
+      <FileName>Fields\Abstract\Field.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MvcDynamicForms.Fields.InputField" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAADAAUABAAACACEgAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Fields\Abstract\InputField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MvcDynamicForms.Fields.ListField" Collapsed="true">
+    <Position X="16.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fields\Abstract\ListField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MvcDynamicForms.Fields.OrientableField" Collapsed="true">
+    <Position X="15" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fields\Abstract\OrientableField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MvcDynamicForms.Fields.TextField" Collapsed="true">
+    <Position X="8.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAATAAAAAAAAAAAAAEAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Fields\Abstract\TextField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MvcDynamicForms.Fields.CheckBox" Collapsed="true">
+    <Position X="11.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fields\CheckBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MvcDynamicForms.Fields.CheckBoxList" Collapsed="true">
+    <Position X="16.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fields\CheckBoxList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MvcDynamicForms.Fields.Literal" Collapsed="true">
+    <Position X="20.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Fields\Literal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MvcDynamicForms.Fields.RadioList" Collapsed="true">
+    <Position X="14" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fields\RadioList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MvcDynamicForms.Fields.Select" Collapsed="true">
+    <Position X="18.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fields\Select.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MvcDynamicForms.Fields.TextArea" Collapsed="true">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fields\TextArea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MvcDynamicForms.Fields.TextBox" Collapsed="true">
+    <Position X="7.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Fields\TextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MvcDynamicForms.DynamicFormModelBinder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicFormModelBinder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MvcDynamicForms.FieldList" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGIAAEAAAAAAABAQCACABAQAAAAAAAAACAAAAAFQIAA=</HashCode>
+      <FileName>FieldList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MvcDynamicForms.Form" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAACAAgAgAAAAAAAACAAQgAAAgAA=</HashCode>
+      <FileName>Form.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Fields" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Enum Name="MvcDynamicForms.Fields.FieldType" Collapsed="true">
+    <Position X="23.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAACAAIQAAAAAAAAAAAAAAAAAAAAAAAAQAEAAAA=</HashCode>
+      <FileName>Enums\FieldType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MvcDynamicForms.Fields.Orientation" Collapsed="true">
+    <Position X="25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\Orientation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
