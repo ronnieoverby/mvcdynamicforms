@@ -8,14 +8,22 @@ namespace MvcDynamicForms
     /// </summary>
     public static class PlaceHolders
     {
-        private const string FIELDS = "1e6e1ef1-8acc-48b7-b1e8-705893b0411c";
-        private const string INPUT = "2bb514da-20ef-483a-9441-d03d83d0471a";
-        private const string PROMPT = "3cb27d35-c390-440a-9114-838e8ba0acf3";
-        private const string ERROR = "0c9cb943-e4b1-480e-ba27-bc1cba8ceefe";
-        private const string LITERAL = "9a119965-583e-4874-9442-201b0f082fd6";
-        private const string SERIALIZEDFORM = "592a069d-b1b2-4489-9fc2-6dc2f5d57ca3";
-        private const string DATASCRIPT = "e535d8d3-1e7b-4f1d-a3a4-2e55e9c3c0c4";
-        private const string FIELDWRAPPERID = "0ec5e0a1-a01a-4384-9f73-5c06ab2db5d3";
+        /*
+         * "Why do you use GUIDs?" I hear you asking.
+         * Well, it's because of the very low risk of my using two of the same
+         * throughout my code and the very low risk of a developer or user
+         * using one in their templates or field definitions. I don't see any
+         * downside to using them. I have prefixed them with their intention
+         * for debugging purposes.
+         */
+        private const string FIELDS = "{Fields:1e6e1ef1-8acc-48b7-b1e8-705893b0411c}";
+        private const string INPUT = "{Input:2bb514da-20ef-483a-9441-d03d83d0471a}";
+        private const string PROMPT = "{Prompt:3cb27d35-c390-440a-9114-838e8ba0acf3}";
+        private const string ERROR = "{Error:0c9cb943-e4b1-480e-ba27-bc1cba8ceefe}";
+        private const string LITERAL = "{Literal:9a119965-583e-4874-9442-201b0f082fd6}";
+        private const string SERIALIZEDFORM = "{SerializedForm:592a069d-b1b2-4489-9fc2-6dc2f5d57ca3}";
+        private const string DATASCRIPT = "{DataScript:e535d8d3-1e7b-4f1d-a3a4-2e55e9c3c0c4}";
+        private const string FIELDWRAPPERID = "{FieldWrapperId:0ec5e0a1-a01a-4384-9f73-5c06ab2db5d3}";
 
         /// <summary>
         /// Place holder for fields' rendered HTML.

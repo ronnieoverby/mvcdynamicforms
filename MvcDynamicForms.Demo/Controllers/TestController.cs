@@ -27,7 +27,7 @@ namespace MvcDynamicForms.Demo.Controllers
                 form.Fields.ToArray());
 
             form.SetFieldTemplates(
-                string.Format(@"<tr></th><td valign=""top"">{0}{1}{2}</td></tr>",
+                string.Format(@"<tr><th /><td valign=""top"" class=""chkCell"">{0}{1}{2}</td></tr>",
                     PlaceHolders.Error, PlaceHolders.Input, PlaceHolders.Prompt),
                     form.Fields.Where(x => x is CheckBox).ToArray());
 

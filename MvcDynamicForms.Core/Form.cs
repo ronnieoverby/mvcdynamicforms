@@ -125,7 +125,8 @@ namespace MvcDynamicForms
             return isValid;
         }
         /// <summary>
-        /// Returns a string containing the rendered html of every contained Field object. The html can optionally include the Form object's state serialized into a hidden field.
+        /// Returns a string containing the rendered HTML of every contained Field object.
+        /// Optionally, the form's serialized state and/or JavaScript data can be included in the returned HTML string.
         /// </summary>        
         /// <param name="formatHtml">Determines whether to format the generated html with indentation and whitespace for readability.</param>
         /// <returns>Returns a string containing the rendered html of every contained Field object.</returns>

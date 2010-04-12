@@ -26,3 +26,10 @@ C:\Users\rdoverby\Documents\My Dropbox\Code\MvcDynamicForms\MvcDynamicForms.Demo
 C:\Users\rdoverby\Documents\My Dropbox\Code\MvcDynamicForms\MvcDynamicForms.Demo\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\rdoverby\Documents\My Dropbox\Code\MvcDynamicForms\MvcDynamicForms.Demo\obj\Debug\MvcDynamicForms.Demo.dll
 C:\Users\rdoverby\Documents\My Dropbox\Code\MvcDynamicForms\MvcDynamicForms.Demo\obj\Debug\MvcDynamicForms.Demo.pdb
+C:\Users\rdoverby\Documents\Visual Studio 2008\Projects\MVC Dynamic Forms\MvcDynamicForms.Demo\bin\MvcDynamicForms.Demo.dll
+C:\Users\rdoverby\Documents\Visual Studio 2008\Projects\MVC Dynamic Forms\MvcDynamicForms.Demo\bin\MvcDynamicForms.Demo.pdb
+C:\Users\rdoverby\Documents\Visual Studio 2008\Projects\MVC Dynamic Forms\MvcDynamicForms.Demo\bin\MvcDynamicForms.dll
+C:\Users\rdoverby\Documents\Visual Studio 2008\Projects\MVC Dynamic Forms\MvcDynamicForms.Demo\bin\MvcDynamicForms.pdb
+C:\Users\rdoverby\Documents\Visual Studio 2008\Projects\MVC Dynamic Forms\MvcDynamicForms.Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\rdoverby\Documents\Visual Studio 2008\Projects\MVC Dynamic Forms\MvcDynamicForms.Demo\obj\Debug\MvcDynamicForms.Demo.dll
+C:\Users\rdoverby\Documents\Visual Studio 2008\Projects\MVC Dynamic Forms\MvcDynamicForms.Demo\obj\Debug\MvcDynamicForms.Demo.pdb

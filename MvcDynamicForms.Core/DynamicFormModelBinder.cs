@@ -44,7 +44,11 @@ namespace MvcDynamicForms
 
                     // set current selections
                     foreach (string value in postedForm.GetValues(key))
-                        lstField.Choices.First(x => x.Value == value).Selected = true;
+                    {
+                        var choice = lstField.Choices.FirstOrDefault(x => x.Value == value);
+                        if (choice != null)
+                            choice.Selected = true;
+                    }
 
                     //lstField.Choices.Remove(.Remove(""); what was this for?
                 }
