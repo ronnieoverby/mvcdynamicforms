@@ -7,7 +7,11 @@
 
     <script type="text/javascript">
         $(function() {
-            
+
+            // hide error labels when the user clicks on the offending input element
+            $(':input').focus(function() {
+                $(this).closest('td').children('label.MvcDynamicFieldError').fadeOut();
+            });
         });
     </script>
 
