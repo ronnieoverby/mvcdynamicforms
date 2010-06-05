@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MvcDynamicForms">
+</Property><Property Name="Solution File" Value="C:\code\mvcdynamicforms\MvcDynamicForms.sln">
+</Property><Property Name="Date" Value="Saturday, June 05, 2010">
+</Property><Property Name="Time" Value="11:30 AM">
+</Property></Properties><Event ErrorLevel="0" Project="MvcDynamicForms.Demo" Source="MvcDynamicForms.Demo\MvcDynamicForms.Demo.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MvcDynamicForms.Demo" Source="MvcDynamicForms.Demo\MvcDynamicForms.Demo.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MvcDynamicForms.Core" Source="MvcDynamicForms.Core\MvcDynamicForms.Core.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MvcDynamicForms.Core" Source="MvcDynamicForms.Core\MvcDynamicForms.Core.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MvcDynamicForms.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="MvcDynamicForms.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MvcDynamicForms.Demo" Source="MvcDynamicForms.Demo\MvcDynamicForms.Demo.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="MvcDynamicForms.Core" Source="MvcDynamicForms.Core\MvcDynamicForms.Core.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
