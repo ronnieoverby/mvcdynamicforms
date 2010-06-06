@@ -25,7 +25,7 @@ namespace MvcDynamicForms.Fields
             html.Replace(PlaceHolders.Prompt, prompt.ToString());
 
             // error label
-            if (!IsValid)
+            if (!ErrorIsClear)
             {
                 var error = new TagBuilder("label");
                 error.Attributes.Add("for", inputName);

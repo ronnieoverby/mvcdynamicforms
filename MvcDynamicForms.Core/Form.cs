@@ -218,5 +218,13 @@ namespace MvcDynamicForms
             foreach (var field in fields)
                 field.Template = template;
         }
+
+        internal void FireModelBoundEvents()
+        {
+            foreach (var fileUpload in Fields.Where(x => x is FileUpload).Cast<FileUpload>())
+            {               
+                fileUpload.FireFilePosted();
+            }
+        }
     }
 }

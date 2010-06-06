@@ -7,12 +7,17 @@ using System.Text.RegularExpressions;
 
 namespace MvcDynamicForms.Fields
 {
+
+    public delegate void ValidatedEventHandler(InputField inputField, InputFieldValidationEventArgs e);
+
     /// <summary>
     /// Represents a dynamically generated html input field.
     /// </summary>
     [Serializable]
     public abstract class InputField : Field
     {
+        public event ValidatedEventHandler Validated;
+
         protected string _requiredMessage = "Required";
         protected string _promptClass = "MvcDynamicFieldPrompt";
         protected string _errorClass = "MvcDynamicFieldError";
@@ -83,7 +88,7 @@ namespace MvcDynamicForms.Fields
         /// <summary>
         /// True if the field is valid; false otherwise.
         /// </summary>
-        public bool IsValid
+        public bool ErrorIsClear
         {
             get
             {
@@ -116,7 +121,6 @@ namespace MvcDynamicForms.Fields
         {
             Error = null;
         }
-    
 
         protected override string BuildDefaultTemplate()
         {
@@ -137,5 +141,17 @@ namespace MvcDynamicForms.Fields
             return ResponseTitle ?? Prompt ?? _key;
         }
 
+        protected virtual void FireValidated()
+        {
+            if (Validated != null)
+                Validated(this, new InputFieldValidationEventArgs { IsValid = ErrorIsClear });
+        }
+
     }
+
+    public class InputFieldValidationEventArgs : EventArgs
+    {
+        public bool IsValid { get; set; }
+    }
+
 }

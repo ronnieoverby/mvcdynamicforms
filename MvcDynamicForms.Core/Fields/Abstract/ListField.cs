@@ -82,6 +82,7 @@ namespace MvcDynamicForms.Fields
         }
         public override bool Validate()
         {
+            ClearError();
             if (Required && !_choices.Select(x => x.Selected).Contains(true))
             {
                 // invalid: required and no checkbox was selected
@@ -90,9 +91,10 @@ namespace MvcDynamicForms.Fields
             }
 
             // valid
-            ClearError();
-            return true;
+            FireValidated();
+            return ErrorIsClear;
         }
+
         /// <summary>
         /// Provides a convenient way to add choices.
         /// </summary>

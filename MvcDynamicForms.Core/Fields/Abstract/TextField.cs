@@ -51,13 +51,14 @@ namespace MvcDynamicForms.Fields
         }
         public override bool Validate()
         {
+            ClearError();
+
             if (string.IsNullOrEmpty(Response))
             {
                 if (Required)
                 {
                     // invalid: is required and no response has been given
                     Error = RequiredMessage;
-                    return false;
                 }
             }
             else
@@ -69,14 +70,12 @@ namespace MvcDynamicForms.Fields
                     {
                         // invalid: has regex and response doesn't match
                         Error = RegexMessage;
-                        return false;
                     }
                 }
             }
 
-            // is valid
-            ClearError();
-            return true;
+            FireValidated();
+            return ErrorIsClear;
         }
     }
 }

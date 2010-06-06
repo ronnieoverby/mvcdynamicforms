@@ -147,11 +147,54 @@ namespace MvcDynamicForms.Demo.Models
                 Html = string.Format(@"<textarea readonly=""readonly"" rows=""8"" cols=""60"">{0}</textarea>", GetEULA())
             };
 
+            var file = new FileUpload
+            {
+                Prompt = "Your photo",
+                InvalidExtensionError = "Image files only.",
+                ValidExtensions = ".jpg,.gif,.png",
+                Required = true,
+                DisplayOrder = 73,
+            };
+            file.Validated += new ValidatedEventHandler(file_Validated);
+            file.Posted += new FilePostedEventHandler(file_Posted);
+
             // create form and add fields to it
             var form = new Form();
-            form.AddFields(description, name, gender, email, sports, states, bio, month, agree, eula);
+            form.AddFields(description, name, gender, email, sports, states, bio, month, agree, eula, file);
 
             return form;
+        }
+
+        static void file_Posted(FileUpload fileUploadField, EventArgs e)
+        {
+            // here, you can do something with the posted file
+            // (save it, email it, etc, or test it and report back to the user)
+            // this event gets fired as soon as the dynamic form is model bound
+        }
+
+        static void file_Validated(InputField inputField, InputFieldValidationEventArgs e)
+        {
+
+            // here, you can also do something with the posted file
+            // (save it, email it, etc, or test it and report back to the user)
+            // this event gets fired following the validation of any class derived from InputField
+            // here you can have more fine grained control of validation
+            // for example:
+
+            if (e.IsValid)
+            {
+                var fileUpload = inputField as FileUpload;
+
+                if (fileUpload.PostedFile.ContentLength > 102400)
+                {
+                    fileUpload.Error = "The file is too large.";
+                }
+                else
+                {
+                    //fileUpload.PostedFile.SaveAs(fileUpload.PostedFile.FileName);
+                }
+
+            }
         }
 
         private static string GetEULA()

@@ -59,16 +59,16 @@ namespace MvcDynamicForms.Fields
 
         public override bool Validate()
         {
+            ClearError();
+
             if (Required && !Checked)
             {
                 // Isn't valid
                 Error = _requiredMessage;
-                return false;
             }
 
-            // Is Valid
-            ClearError();
-            return true;
+            FireValidated();
+            return ErrorIsClear;
         }
 
         public override string RenderHtml()
@@ -77,7 +77,7 @@ namespace MvcDynamicForms.Fields
             var html = new StringBuilder(Template);
 
             // error label
-            if (!IsValid)
+            if (!ErrorIsClear)
             {
                 var error = new TagBuilder("label");
                 error.SetInnerText(Error);

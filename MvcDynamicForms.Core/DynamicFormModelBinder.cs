@@ -11,6 +11,9 @@ namespace MvcDynamicForms
         public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
         {
             var postedForm = controllerContext.RequestContext.HttpContext.Request.Form;
+            var postedFiles = controllerContext.RequestContext.HttpContext.Request.Files;
+
+            var allKeys = postedForm.AllKeys.Union(postedFiles.AllKeys);
 
             var form = (Form)bindingContext.Model;
             if (form == null && !string.IsNullOrEmpty(postedForm[MagicStrings.MvcDynamicSerializedForm]))
@@ -21,7 +24,7 @@ namespace MvcDynamicForms
             if (form == null)
                 throw new NullReferenceException("The dynamic form object was not found. Be sure to include PlaceHolders.SerializedForm in your form template.");            
 
-            foreach (var key in postedForm.AllKeys.Where(x => x.StartsWith(form.FieldPrefix)))
+            foreach (var key in allKeys.Where(x => x.StartsWith(form.FieldPrefix)))
             {
                 string fieldKey = key.Remove(0, form.FieldPrefix.Length);
                 InputField dynField = form.InputFields.SingleOrDefault(f => f.Key == fieldKey);
@@ -57,8 +60,14 @@ namespace MvcDynamicForms
                     var chkField = (CheckBox)dynField;
                     chkField.Checked = bool.Parse(postedForm.GetValues(key)[0]);
                 }
+                else if (dynField is FileUpload)
+                {
+                    var fileField = (FileUpload)dynField;
+                    fileField.PostedFile = postedFiles[key];
+                }
             }
 
+            form.FireModelBoundEvents();
             return form;
         }
     }

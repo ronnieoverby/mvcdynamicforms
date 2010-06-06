@@ -20,7 +20,8 @@
 
     <h2>
         Dynamically Generated Form</h2>
-    <%Html.BeginForm(); %>
+
+    <%Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" }); %>
     
     <%--
     Here we are calling Form.RenderHtml, which returns a string containing all of the form's html.
@@ -29,12 +30,12 @@
     performance.
     
     The RenderHtml() method doesn't render any form elements nor submit buttons. As you can see,
-    we have surrounded the RenderHtml() method call with the needed elements for form submission.
+    we have surrounded the RenderHtml() method call with the n /e /eded elements for form submiss /ion.
         --%>
     
     <%=Model.RenderHtml(true) %>
     
     
     <input type="submit" value="Submit" />
-    <%Html.EndForm(); %>
+<%Html.EndForm(); %>
 </asp:Content>
