@@ -14,7 +14,6 @@ namespace MvcDynamicForms.Fields
     {
         private string _checkedValue = "Yes";
         private string _uncheckedValue = "No";
-        new private string _promptClass = "MvcDynamicCheckboxPrompt";
 
         /// <summary>
         /// The text to be used as the user's response when they check the checkbox.
@@ -55,6 +54,12 @@ namespace MvcDynamicForms.Fields
             {
                 return Checked ? _checkedValue : _uncheckedValue;
             }
+        }
+
+        public CheckBox()
+        {
+            // give the checkbox a different default prompt class
+            _promptClass = "MvcDynamicCheckboxPrompt";
         }
 
         public override bool Validate()
