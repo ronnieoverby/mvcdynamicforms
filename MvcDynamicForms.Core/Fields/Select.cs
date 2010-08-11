@@ -93,7 +93,9 @@ namespace MvcDynamicForms.Fields
             {
                 var opt = new TagBuilder("option");
                 opt.Attributes.Add("value", choice.Value);
-                if (choice.Selected) opt.Attributes.Add("selected", "selected");
+                if (choice.Selected) 
+                    opt.Attributes.Add("selected", "selected");
+                opt.MergeAttributes(choice.HtmlAttributes);
                 opt.SetInnerText(choice.Text);
                 input.Append(opt.ToString());
             }

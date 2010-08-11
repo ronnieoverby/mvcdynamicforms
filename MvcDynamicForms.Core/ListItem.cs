@@ -20,6 +20,7 @@ namespace MvcDynamicForms
             Text = text;
             Value = value;
             Selected = selected;
+            HtmlAttributes = new Dictionary<string, string>();
         }
 
         public override string ToString()
@@ -38,5 +39,10 @@ namespace MvcDynamicForms
         {
             return ("b1721411-cec2-4d59-b18d-09a02298d365" + ToString()).GetHashCode();
         }
+
+        /// <summary>
+        /// Stores html attributes to be rendered with the list item.
+        /// </summary>
+        public Dictionary<string, string> HtmlAttributes { get; set; }
     }
 }

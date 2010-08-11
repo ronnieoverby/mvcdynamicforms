@@ -42,6 +42,7 @@ namespace MvcDynamicForms.Fields
             var choicesList = _choices.ToList();
             for (int i = 0; i < choicesList.Count; i++)
             {
+                ListItem choice = choicesList[i];
                 string radId = inputName + i;
 
                 // open list item
@@ -53,16 +54,18 @@ namespace MvcDynamicForms.Fields
                 rad.Attributes.Add("type", "radio");
                 rad.Attributes.Add("name", inputName);
                 rad.Attributes.Add("id", radId);
-                rad.Attributes.Add("value", choicesList[i].Value);
-                if (choicesList[i].Selected) rad.Attributes.Add("checked", "checked");
+                rad.Attributes.Add("value", choice.Value);
+                if (choice.Selected) 
+                    rad.Attributes.Add("checked", "checked");
                 rad.MergeAttributes(_inputHtmlAttributes);
+                rad.MergeAttributes(choice.HtmlAttributes);
                 input.Append(rad.ToString(TagRenderMode.SelfClosing));
 
                 // checkbox label
                 var lbl = new TagBuilder("label");
                 lbl.Attributes.Add("for", radId);
                 lbl.Attributes.Add("class", _inputLabelClass);
-                lbl.SetInnerText(choicesList[i].Text);
+                lbl.SetInnerText(choice.Text);
                 input.Append(lbl.ToString());
 
                 // close list item

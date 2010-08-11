@@ -42,6 +42,7 @@ namespace MvcDynamicForms.Fields
             var choicesList = _choices.ToList();
             for (int i = 0; i < choicesList.Count; i++)
             {
+                ListItem choice = choicesList[i];
                 string chkId = inputName + i;
 
                 // open list item
@@ -53,16 +54,18 @@ namespace MvcDynamicForms.Fields
                 chk.Attributes.Add("type", "checkbox");
                 chk.Attributes.Add("name", inputName);
                 chk.Attributes.Add("id", chkId);
-                chk.Attributes.Add("value", choicesList[i].Value);
-                if (choicesList[i].Selected) chk.Attributes.Add("checked", "checked");
+                chk.Attributes.Add("value", choice.Value);
+                if (choice.Selected)
+                    chk.Attributes.Add("checked", "checked");
                 chk.MergeAttributes(_inputHtmlAttributes);
+                chk.MergeAttributes(choice.HtmlAttributes);
                 input.Append(chk.ToString(TagRenderMode.SelfClosing));
 
                 // checkbox label
                 var lbl = new TagBuilder("label");
                 lbl.Attributes.Add("for", chkId);
                 lbl.AddCssClass(_inputLabelClass);
-                lbl.SetInnerText(choicesList[i].Text);
+                lbl.SetInnerText(choice.Text);
                 input.Append(lbl.ToString());
 
                 // close list item

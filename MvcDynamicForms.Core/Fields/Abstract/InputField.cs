@@ -97,6 +97,8 @@ namespace MvcDynamicForms.Fields
         }
         /// <summary>
         /// Collection of html attribute names and values that will be applied to the rendered input elements.
+        /// For list fields, these will be applied to every ListItem.
+        /// Use the ListItem.HtmlAttributes dictionary for rendering attributes for individual list items.
         /// </summary>
         public Dictionary<string, string> InputHtmlAttributes
         {

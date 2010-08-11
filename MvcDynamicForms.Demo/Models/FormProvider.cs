@@ -83,7 +83,7 @@ namespace MvcDynamicForms.Demo.Models
                 Orientation = Orientation.Vertical
             };
             gender.AddChoices("Male,Female", ",");
-
+            
             var email = new TextBox
             {
                 DisplayOrder = 25,
