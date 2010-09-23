@@ -1,0 +1,72 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="new" priority="0" />
+      <Item value="TextBox`0" priority="0" />
+      <Item value="Prompt" priority="0" />
+      <Item value="Template" priority="0" />
+      <Item value="PlaceHolders`0" priority="2" />
+      <Item value="string" priority="0" />
+      <Item value="colorPicker" priority="0" />
+      <Item value="Key" priority="0" />
+      <Item value="form" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@MvcDynamicForms.PlaceHolders">
+      <Item value="Prompt" priority="0" />
+      <Item value="Input" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MvcDynamicForms.Form">
+      <Item value="FieldPrefix" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="9624E64A-013F-41E8-84BA-C34EE744685E/d:Fields/f:CheckBox.cs" caret="2152" fromTop="33" />
+      <File id="9624E64A-013F-41E8-84BA-C34EE744685E/d:Fields/d:Abstract/f:InputField.cs" caret="4008" fromTop="28" />
+      <File id="9624E64A-013F-41E8-84BA-C34EE744685E/d:Fields/f:TextArea.cs" caret="0" fromTop="0" />
+      <File id="9624E64A-013F-41E8-84BA-C34EE744685E/d:Fields/d:Abstract/f:Field.cs" caret="3916" fromTop="12" />
+      <File id="9624E64A-013F-41E8-84BA-C34EE744685E/d:Fields/f:TextBox.cs" caret="1142" fromTop="33" />
+      <File id="F9EA08E5-B7F0-4114-A87F-2207A05B19D4/d:Models/f:FormProvider.cs" caret="7122" fromTop="149" />
+      <File id="F9EA08E5-B7F0-4114-A87F-2207A05B19D4/d:Views/d:Home/f:Demo.aspx" caret="337" fromTop="7" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="F9EA08E5-B7F0-4114-A87F-2207A05B19D4/d:Models/f:FormProvider.cs" caret="8240" fromTop="42" />
+      <File id="F9EA08E5-B7F0-4114-A87F-2207A05B19D4/d:Models/f:FormProvider.cs" caret="8240" fromTop="38" />
+      <File id="F9EA08E5-B7F0-4114-A87F-2207A05B19D4/d:Models/f:FormProvider.cs" caret="8240" fromTop="38" />
+      <File id="F9EA08E5-B7F0-4114-A87F-2207A05B19D4/d:Models/f:FormProvider.cs" caret="8240" fromTop="38" />
+      <File id="F9EA08E5-B7F0-4114-A87F-2207A05B19D4/d:Models/f:FormProvider.cs" caret="8240" fromTop="38" />
+      <File id="F9EA08E5-B7F0-4114-A87F-2207A05B19D4/d:Models/f:FormProvider.cs" caret="8240" fromTop="38" />
+      <File id="F9EA08E5-B7F0-4114-A87F-2207A05B19D4/d:Models/f:FormProvider.cs" caret="8240" fromTop="38" />
+      <File id="F9EA08E5-B7F0-4114-A87F-2207A05B19D4/d:Models/f:FormProvider.cs" caret="8240" fromTop="40" />
+      <File id="F9EA08E5-B7F0-4114-A87F-2207A05B19D4/d:Models/f:FormProvider.cs" caret="8240" fromTop="28" />
+      <File id="F9EA08E5-B7F0-4114-A87F-2207A05B19D4/d:Views/d:Home/f:Demo.aspx" caret="1139" fromTop="19" />
+      <File id="F9EA08E5-B7F0-4114-A87F-2207A05B19D4/d:Views/d:Home/f:Demo.aspx" caret="723" fromTop="13" />
+      <File id="F9EA08E5-B7F0-4114-A87F-2207A05B19D4/d:Views/d:Home/f:Demo.aspx" caret="524" fromTop="8" />
+      <File id="F9EA08E5-B7F0-4114-A87F-2207A05B19D4/d:Views/d:Home/f:Demo.aspx" caret="1102" fromTop="17" />
+      <File id="F9EA08E5-B7F0-4114-A87F-2207A05B19D4/d:Models/f:FormProvider.cs" caret="8012" fromTop="24" />
+      <File id="F9EA08E5-B7F0-4114-A87F-2207A05B19D4/d:Models/f:FormProvider.cs" caret="7806" fromTop="20" />
+      <File id="F9EA08E5-B7F0-4114-A87F-2207A05B19D4/d:Models/f:FormProvider.cs" caret="7529" fromTop="16" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

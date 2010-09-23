@@ -85,6 +85,7 @@
     <Compile Include="Fields\CheckBox.cs" />
     <Compile Include="Fields\CheckBoxList.cs" />
     <Compile Include="Fields\FileUpload.cs" />
+    <Compile Include="Fields\Hidden.cs" />
     <Compile Include="Fields\Literal.cs" />
     <Compile Include="Fields\RadioList.cs" />
     <Compile Include="Fields\Select.cs" />

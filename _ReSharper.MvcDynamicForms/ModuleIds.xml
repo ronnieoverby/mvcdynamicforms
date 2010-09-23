@@ -1,0 +1,4 @@
+<Modules>
+  <Module PersistentId="F9EA08E5-B7F0-4114-A87F-2207A05B19D4" ModuleId="MvcDynamicForms.Demo" />
+  <Module PersistentId="9624E64A-013F-41E8-84BA-C34EE744685E" ModuleId="MvcDynamicForms.Core" />
+</Modules>

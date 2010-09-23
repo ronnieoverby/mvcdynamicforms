@@ -65,6 +65,11 @@ namespace MvcDynamicForms
                     var fileField = (FileUpload)dynField;
                     fileField.PostedFile = postedFiles[key];
                 }
+                else if (dynField is Hidden)
+                {
+                    var hiddenField = (Hidden)dynField;
+                    hiddenField.Value = postedForm[key];
+                }
             }
 
             form.FireModelBoundEvents();

@@ -158,9 +158,15 @@ namespace MvcDynamicForms.Demo.Models
             file.Validated += new ValidatedEventHandler(file_Validated);
             file.Posted += new FilePostedEventHandler(file_Posted);
 
+            var hidden = new Hidden
+            {
+                 ResponseTitle = "A Hidden Field",
+                 Value = "some value"
+            };
+
             // create form and add fields to it
             var form = new Form();
-            form.AddFields(description, name, gender, email, sports, states, bio, month, agree, eula, file);
+            form.AddFields(description, name, gender, email, sports, states, bio, month, agree, eula, file, hidden);
 
             return form;
         }
