@@ -38,3 +38,7 @@ Z:\code\mvcdynamicforms\MvcDynamicForms.Core\bin\Debug\MvcDynamicForms.pdb
 Z:\code\mvcdynamicforms\MvcDynamicForms.Core\obj\Debug\ResolveAssemblyReference.cache
 Z:\code\mvcdynamicforms\MvcDynamicForms.Core\obj\Debug\MvcDynamicForms.dll
 Z:\code\mvcdynamicforms\MvcDynamicForms.Core\obj\Debug\MvcDynamicForms.pdb
+D:\Code\mvcdynamicforms\MvcDynamicForms.Core\obj\Debug\MvcDynamicForms.dll
+D:\Code\mvcdynamicforms\MvcDynamicForms.Core\obj\Debug\MvcDynamicForms.pdb
+D:\Code\mvcdynamicforms\MvcDynamicForms.Core\bin\Debug\MvcDynamicForms.dll
+D:\Code\mvcdynamicforms\MvcDynamicForms.Core\bin\Debug\MvcDynamicForms.pdb

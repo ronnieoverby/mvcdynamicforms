@@ -47,3 +47,11 @@ Z:\code\mvcdynamicforms\MvcDynamicForms.Demo\bin\MvcDynamicForms.pdb
 Z:\code\mvcdynamicforms\MvcDynamicForms.Demo\obj\Debug\ResolveAssemblyReference.cache
 Z:\code\mvcdynamicforms\MvcDynamicForms.Demo\obj\Debug\MvcDynamicForms.Demo.dll
 Z:\code\mvcdynamicforms\MvcDynamicForms.Demo\obj\Debug\MvcDynamicForms.Demo.pdb
+D:\Code\mvcdynamicforms\MvcDynamicForms.Demo\obj\Debug\MvcDynamicForms.Demo.csprojResolveAssemblyReference.cache
+D:\Code\mvcdynamicforms\MvcDynamicForms.Demo\obj\Debug\MvcDynamicForms.Demo.dll
+D:\Code\mvcdynamicforms\MvcDynamicForms.Demo\obj\Debug\MvcDynamicForms.Demo.pdb
+D:\Code\mvcdynamicforms\MvcDynamicForms.Demo\bin\MvcDynamicForms.Demo.dll.config
+D:\Code\mvcdynamicforms\MvcDynamicForms.Demo\bin\MvcDynamicForms.Demo.dll
+D:\Code\mvcdynamicforms\MvcDynamicForms.Demo\bin\MvcDynamicForms.Demo.pdb
+D:\Code\mvcdynamicforms\MvcDynamicForms.Demo\bin\MvcDynamicForms.dll
+D:\Code\mvcdynamicforms\MvcDynamicForms.Demo\bin\MvcDynamicForms.pdb
